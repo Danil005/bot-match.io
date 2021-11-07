@@ -4,6 +4,7 @@ use App\Http\Controllers\Commands\StartCommand;
 use BotMan\BotMan\BotMan;
 
 $botman = resolve('botman');
+echo 'ok';
 
 $botman->hears('/start', StartCommand::class.'@start');
 
